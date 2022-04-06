@@ -1,0 +1,69 @@
+@import "_common";
+
+$wid : 1300px;
+$c-point : #fed136;
+$c-white : #fff;
+
+
+@media(max-width:767px){
+    $wid : 100%;
+    .work{
+        text-align:center;
+        background-color: #f7f7f7;
+        padding:150px 0;
+        > h2{}
+        > p{}
+        > ul{
+            width:$wid; margin:60px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width:100%;
+                margin-bottom:3.5%;
+                > figure{
+                    > img{width:100%;}
+                    > figcaption{
+                        padding:10% 0;
+                        background-color: $c-white;
+                        > b{}
+                        > p{}
+                    }
+                    
+                }
+            }
+        }    
+        
+    }
+}
+
+@media (min-width:768px){
+    .work{
+        text-align:center;
+        background-color: #f7f7f7;
+        padding:150px 0;
+        > h2{}
+        > p{}
+        > ul{
+            width:$wid; margin:60px auto 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                width:31%;
+                margin-bottom:3.5%;
+                > figure{
+                    > img{width:100%;}
+                    > figcaption{
+                        padding:10% 0;
+                        background-color: $c-white;
+                        > b{}
+                        > p{}
+                    }
+                    
+                }
+            }
+        }    
+        
+    }
+}
